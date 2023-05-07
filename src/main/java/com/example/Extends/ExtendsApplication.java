@@ -1,8 +1,4 @@
 package com.example.Extends;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 public class ExtendsApplication {
 
     public static void main(String[] args) {
@@ -12,9 +8,15 @@ public class ExtendsApplication {
 
         Manager kseniya = new Manager();
         kseniya.setName("Kseniya");
-        kseniya.setSalary(30_000.0);
         kseniya.setBonus(35_000.0);
+        kseniya.setSalary(30_000.0);
 
-        System.out.println(kseniya);
+        JavaDeveloper aik = new JavaDeveloper();
+        aik.setName("Aik");
+        aik.setPetProject(170_000.0);
+        aik.setSalary(100_000.0);
+
+
+        System.out.println(aik.getSalary());
     }
 }

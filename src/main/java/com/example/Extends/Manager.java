@@ -9,6 +9,7 @@ public class Manager extends Employee {
     public static final double MAX_BONUS = 35_000.0;
 
 
+    @Override
     public double getSalary() {
         if (getBonus() > MAX_BONUS) {
           return super.getSalary();
